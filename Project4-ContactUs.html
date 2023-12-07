@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 4 - Product Page</title>
+    <link rel="stylesheet" href="p4styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Freehand&family=Marck+Script&family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="contactFormValidate.js"></script>
+</head>
+<body>
+    <div id="headcontainer">
+        <div class="news-container">
+            <ul class="news-list" id="newsList">
+                <li>New Season, New Styles - Check Out Our Latest Arrivals!</li>
+                <li>Fashion Forward: Discover the Trends Making Waves</li>
+                <li>Exclusive Sale: Limited-Time Offers on Top Brands!</li>
+                <li>Fashion Week Highlights: Get Inspired by Runway Trends</li>
+                <li>Celebrity Style Watch: Steal Their Red Carpet Looks</li>
+                <li>Style Essentials: Must-Haves for Every Wardrobe</li>
+                <li>Meet Our Designers: Behind the Scenes of Chic Creations</li>
+                <li>Customer Spotlight: Your Style, Your Stories</li>
+                <li>Fashion Talks: Expert Tips for Elevating Your Look</li>
+                <li>Stay Tuned: Exciting Giveaways and Events Coming Soon!</li>
+                <li>Unveiling Fall's Fabulous Fashion: Explore the Season's Hottest Picks</li>
+                <li>Style Evolution: Embrace the Latest Fashion Revolutions</li>
+                <li>Limited Edition Collection: Grab Them Before They're Gone!</li>
+                <li>Style Icons: Channeling Timeless Elegance</li>
+                <li>Fashion Fusion: Where Trends Meet Tradition</li>
+                <li>Accessorize Your Way: Statement Pieces That Speak Volumes</li>
+                <li>The Art of Dressing: Mastering Everyday Elegance</li>
+                <li>Sustainable Style: Ethical Fashion Choices You'll Love</li>
+            </ul>
+        </div>
+
+        <header>
+            <div id="firstrow">
+                <a href="index.html">
+                    <img id="cynpic" src="cyn.png" alt="Cyn Wardrobe Whisperer Logo">
+                </a>
+                <div id="nav1">
+                    <ul>
+                        <li><a href="Project4-productpage.html">WOMEN</a></li>
+                        <li><a href="sidelinks.html">MEN</a></li>
+                        <li><a href="sidelinks.html">KIDS</a></li>
+                        <li><a href="sidelinks.html">ACCESSORIES</a></li>
+                        <li><a href="sidelinks.html">OUR STORY</a></li>
+                        <li><a href="Project4-ContactUs.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div id="carticon">
+                    <a href="sidelinks.html">
+                        <img id="cartpic" src="cartpic.png" alt="cartpicture">
+                    </a>
+                </div>
+                <div id="staricon">
+                    <a href="sidelinks.html">
+                        <img id="starpic" src="starpic.png" alt="starpicture">
+                    </a>
+                </div>
+                <div id="usericon">
+                    <a href="sidelinks.html">
+                        <img id="userpic" src="userpic.png" alt="userpicture">
+                    </a>
+                </div>
+                <form>
+                    <ul>
+                        <li>
+                            <input id="search" name="search" type="text">
+                            <label id="searchlabel" for="search">Search Items</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <aside>
+            <h2 id="maptitle">Our Address</h2>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.926262134852!2d-97.14398478791077!3d49.90018767137346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715dbbf23d43%3A0xca279ae049eb8b53!2sRed%20River%20College%20Polytechnic%20-%20Exchange%20District%20Campus!5e0!3m2!1szh-CN!2sca!4v1701811658902!5m2!1szh-CN!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </aside>
+
+        <section>
+            <h2 id="contactustitle">CONTACT US</h2>
+            <div id="wrapper">
+                <form method="post" 
+                      id="contact_form" 
+                      action="https://hjing2.github.io/project/">
+                    <fieldset>
+                        <div class="formfield">
+                            <label for="fullname" class="contactinfo">Full Name</label>
+                            <input id="fullname" name="fullname" type="text">
+                            <p class="contactError error" id="fullname_error">* Required field</p>
+                        </div>
+                        <div class="formfield">
+                            <label for="phonenumber" class="contactinfo">Phone Number</label>
+                            <input id="phonenumber" name="phonenumber" type="Number">
+                            <p class="contactError error" id="phonenumber_error">* Required field</p>
+                            <p class="contactError error" id="phonenumberformat_error">* Invalid phone number</p>
+                        </div>
+                        <div class="formfield">
+                            <label for="email" class="contactinfo">Email</label>
+                            <input id="email" name="email" type="text">
+                            <p class="contactError error" id="email_error">* Required field</p>
+                            <p class="contactError error" id="emailformat_error">* Invalid email address</p>
+                        </div>
+                        <br>
+                        <div class="formfield">
+                            <label id="feedbacklabel" for="feedback">Please leave your feedback here:</label><br>
+                            <textarea id="feedback" name="feedback" rows="8" cols="50"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" >Submit</button>
+                        <button type="reset" >Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer" id="footerleft"> 
+            <ul class="footerlink">
+                <li class="footerlinklist"><a href="sidelinks.html">Order Portal</a></li>
+                <li class="footerlinklist">
+                <a href="sidelinks.html">Store Policies</a></li>
+                <li class="footerlinklist">
+                <a href="sidelinks.html">Contact Us</a></li>
+                <li class="footerlinklist">
+                <a href="sidelinks.html">Terms Of Service</a></li>
+                <li class="footerlinklist">
+                <a href="sidelinks.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer" id="footermiddle">
+            <ul class="snslink">
+                <li id="tiktok" class="snslinklist"><a href="https://www.tiktok.com/en/">TikTok</a></li>
+                <li id="instagram" class="snslinklist"> <a href="https://www.instagram.com/">Instagram</a></li>
+                <li id="twitter" class="snslinklist"><a href="https://twitter.com/">Twitter</a></li>
+                <li id="facebook" class="snslinklist"><a href="https://www.facebook.com/">Facebook</a></li>
+                <li id="youtube" class="snslinklist"><a href="https://www.youtube.com/">Youtube</a></li>
+            </ul>
+        </div>
+
+        <div class="footer" id="footerright">
+            <h1 id="brandcyn">Our Brand - Cyn</h1>
+            <div id="branddescription">
+                <p>Welcome to Cyn, where style meets individuality. Our brand celebrates the essence of modern femininity, offering a fusion of elegance and versatility in every piece. Join us in exploring a world of refined fashion that resonates with your distinct style. Experience the allure of Cyn - where fashion transcends boundaries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="footerbottom">
+        Copyright © 2023, Haodan Jing
+    </div>
+
+</body>
+</html>
